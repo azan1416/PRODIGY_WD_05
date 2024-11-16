@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="WeatherStyle.css">
+</head>
+<body>
+ <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="weather-container">
+    <div class="weather-card">
+      
+      <h1 class="city-name">City Name</h1>
+      
+      
+      <p class="temperature">0°C</p>
+      
+      
+      <p class="weather-condition">Clear Sky</p>
+      
+     
+      <div class="search-container">
+        <input type="text" id="cityInput" placeholder="Search for a city..." onkeyup="filterCities()">
+        <div id="cityDropdown" class="dropdown"></div>
+      </div>
+
+      
+      <button id="getWeatherBtn">Get Weather</button>
+
+     
+      <div class="weather-details">
+  <p class="humidity" style="display: none;">Humidity: 0%</p> 
+  <p class="visibility" style="display: none;">Visibility: 0 km</p>
+</div>
+
+    </div>
+  </div>
+
+  <script src="WeatherScript.js"></script>
+</body>
+</html>
